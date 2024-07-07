@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" href="favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+    <title>Mg-MelodyMix</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="right scrollbar">
+        <div class="mainright">
+            <div class="rightnav">
+                <div class="rightnavicons">
+                    <div class="leftarrow" onclick="gotoartists()">
+                        <img class="arrow"src="left_arrow.svg" alt="">
+                    </div>
+                    <div class="rightarrow" onclick="gotoabout()">
+                        <img class="arrow"   src="right_arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="rightnavbtns">
+                    <button class="feedback" onclick="gotofeedback()">Feedback</button>
+                </div>
+            </div>
+            <div class="rightbody">
+                <h1>Feedback</h1>
+                <p class="line">I value your input and look forward to your suggestions!</p>
+                <div class="mail">
+                    <p>Email Address</p>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="feedbackbox">
+                    <p>Feedback</p>
+                    <textarea id="feedback" name="feedback" rows="5" maxlength="200" placeholder="Write your feedback here..."></textarea>
+                </div>
+                <div id="submit">
+                    <button id="sub">Submit</button>
+                </div>
+                <p class="thank">THANK YOU !</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="artists.js"></script>
+<script src="feedback.js"></script>
+</html>
